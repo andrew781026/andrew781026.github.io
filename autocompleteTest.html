@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>無限可捲式autocomplete</title>
+
+
+    <script  src="https://code.jquery.com/jquery-1.12.4.js"  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script  src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="       crossorigin="anonymous"></script>
+
+    <style>
+        .ui-autocomplete {
+            max-height: 100px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+        }
+        /* IE 6 doesn't support max-height
+         * we use height instead, but this forces the menu to always be this tall
+         */
+        * html .ui-autocomplete {
+            height: 100px;
+        }
+    </style>
+
+
+    <script>
+
+        var flag = 0 ;
+        $( function() {
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+            $( "#tags" ).autocomplete({
+                source: availableTags
+            });
+
+            $( "#tags" ).autocomplete( "instance" )._renderItem = function( ul, item ) {
+
+                ul.scroll(function () {
+
+                    var height = ul.outerHeight();
+                    var scrollHeight = ul[0].scrollHeight;
+                    var scrollTop = ul.scrollTop();
+
+                    if( height + scrollTop >= scrollHeight ){
+
+                        for (var i = 0 ; i < 5 ; i++ ){
+                            $( "<li>" ).append( "<div>" + ++flag + "</div>" ).appendTo( ul );
+                        }
+
+
+                    }
+                     // console.log("height="+height+" ; scrollHeight="+scrollHeight+" ; scrollTop="+scrollTop);
+
+                });
+;
+                console.log("item.label="+item.label);
+
+                return $( "<li>" )
+                        .append( "<div>" + item.label + "<br>" + item.desc + "</div>" )
+                        .appendTo( ul );
+
+
+            };
+
+        } );
+    </script>
+
+
+
+</head>
+<body>
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+    </div>
+
+
+</body>
+</html>
