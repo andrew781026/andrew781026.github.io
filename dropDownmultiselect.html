@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.js"  ></script>
+
+<!--  請參照右側做multi drop down使用 http://semantic-ui.com/modules/dropdown.html#/usage  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready( function() {
+
+        $('.ui.dropdown').dropdown()    ;
+
+
+        $('#multi-select').dropdown()      ;
+
+
+    });
+
+    function showValue() {
+        var value = $('#multi-select').val()  ;
+        console.log(value);
+    }
+
+</script>
+
+<div class="ui dropdown">
+    <input type="hidden" name="gender">
+    <i class="dropdown icon"></i>
+    <div class="default text">Gender</div>
+    <div class="menu">
+        <div class="item" data-value="male">Male</div>
+        <div class="item" data-value="female">Female</div>
+    </div>
+</div>
+
+
+
+<div class="ui multiple selection dropdown">
+    <!-- This will receive comma separated value like OH,TX,WY !-->
+    <input name="states" type="hidden" >
+    <i class="dropdown icon"></i>
+    <div class="default text">States</div>
+    <div class="menu">
+        <div class="item" data-value="AL">Alabama</div>
+        <div class="item" data-value="AK">Alaska</div>
+        <div class="item" data-value="AZ">Arizona</div>
+        <div class="item" data-value="AR">Arkansas</div>
+        <div class="item" data-value="CA">California</div>
+        <!-- Saving your scroll sanity !-->
+        <div class="item" data-value="OH">Ohio</div>
+        <div class="item" data-value="OK">Oklahoma</div>
+        <div class="item" data-value="OR">Oregon</div>
+        <div class="item" data-value="PA">Pennsylvania</div>
+        <div class="item" data-value="RI">Rhode Island</div>
+        <div class="item" data-value="SC">South Carolina</div>
+        <div class="item" data-value="SD">South Dakota</div>
+        <div class="item" data-value="TN">Tennessee</div>
+        <div class="item" data-value="TX">Texas</div>
+        <div class="item" data-value="UT">Utah</div>
+        <div class="item" data-value="VT">Vermont</div>
+        <div class="item" data-value="VA">Virginia</div>
+        <div class="item" data-value="WA">Washington</div>
+        <div class="item" data-value="WV">West Virginia</div>
+        <div class="item" data-value="WI">Wisconsin</div>
+        <div class="item" data-value="WY">Wyoming</div>
+    </div>
+</div>
+
+<button onclick="showValue()">顯示資料</button>
+<br><br><br>
+
+
+<select name="states" class="ui selection dropdown" multiple="" id="multi-select">
+    <option value="">States</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+</select>
+
+
+</body>
+</html>
