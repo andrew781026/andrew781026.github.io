@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>某品號所有庫別存量</title>
 
 
-    <script src="../../../../git/product_service/WebContent/js/angular-1.5.7.min.js"></script>
-    <script src="../../../../git/product_service/WebContent/js/app.js"></script>
+    <script src="js/angular-1.5.7.min.js"></script>
+    <script src="js/app.js"></script>
 
 </head>
 <body ng-app="productApp">
@@ -42,7 +42,7 @@
                <td ng-bind="product.storagePlace"></td>
                <td><a href="" ng-click="ctrl.href(product.productID)">修改儲位</a></td>
                <td ng-repeat="warehouse in ctrl.warehouses" ng-bind="ctrl.amountInWarehouse(product,warehouse)" ng-show="warehouse.check" ></td>
-               <td><img src="../../../../git/product_service/WebContent/img/delete_png.png" height="30px" ng-click="ctrl.removeProductInfo(product.productID)"></td>
+               <td><img src="img/delete_png.png" height="30px" ng-click="ctrl.removeProductInfo(product.productID)"></td>
             </tr>
         </tbody>
     </table>
