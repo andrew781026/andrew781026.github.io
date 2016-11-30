@@ -5,11 +5,11 @@
     <title>無限可捲式autocomplete</title>
 
 
-    <script  src="https://code.jquery.com/jquery-1.12.4.js"  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="        crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-1.12.4.js"  ></script>
 
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script  src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="       crossorigin="anonymous"></script>
+    <script  src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"  ></script>
 
     <style>
         .ui-autocomplete {
@@ -56,7 +56,20 @@
                 "Scheme"
             ];
             $( "#tags" ).autocomplete({
-                source: availableTags
+                source: function (request, response) {
+                    // request.term is the term searched for.
+                    // response is the callback function you must call to update the autocomplete's  suggestion list.
+                    $.ajax({
+                        url: "http://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                        minLength: 2,
+                        data: { q: request.term , DB:'LJ' , page:'' },
+                        dataType: "json",
+                        success: response,
+                        error: function () {
+                            response([]);
+                        }
+                    });
+                }
             });
 
             $( "#tags" ).autocomplete( "instance" )._renderItem = function( ul, item ) {
@@ -70,6 +83,16 @@
                     if( height + scrollTop >= scrollHeight ){
 
                         for (var i = 0 ; i < 5 ; i++ ){
+
+                            $.ajax({
+                                url: "http://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                                data:  { q: $("#searchString").val() , DB:'LJ' , page:''  },
+                                dataType: 'json',
+                                success: function (data) {
+
+                                }
+                            });
+
                             $( "<li>" ).append( "<div>" + ++flag + "</div>" ).appendTo( ul );
                         }
 

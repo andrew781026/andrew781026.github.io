@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,9 @@
 <div ng-controller="singleProduct as ctrl">
 
 
-    
+    <select ng-click="ctrl.test()">
+        <option ng-repeat="warehouse in ctrl.warehouses" ng-model="warehouse.check" >{{warehouse.name}}</option>
+    </select>
     
     <span ng-repeat="warehouse in ctrl.warehouses">
     	<input type="checkbox" ng-model="warehouse.check" >{{warehouse.name}}
