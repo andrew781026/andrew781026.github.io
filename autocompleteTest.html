@@ -60,7 +60,7 @@
                     // request.term is the term searched for.
                     // response is the callback function you must call to update the autocomplete's  suggestion list.
                     $.ajax({
-                        url: "http://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                        url: "https://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
                         minLength: 2,
                         data: { q: request.term , DB:'LJ' , page:'' },
                         dataType: "json",
@@ -85,7 +85,7 @@
                         for (var i = 0 ; i < 5 ; i++ ){
 
                             $.ajax({
-                                url: "http://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                                url: "https://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
                                 data:  { q: $("#searchString").val() , DB:'LJ' , page:''  },
                                 dataType: 'json',
                                 success: function (data) {
