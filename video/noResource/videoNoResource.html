@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video 無資源範例</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+    <style>
+        #noSourceWarning {
+            position:absolute;
+            font-size: 16px;
+            z-index: 2;
+        }
+
+        #bk {
+            background-color: black;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #father {
+            position: relative;
+            width: 1000px;
+            height: 500px;
+        }
+    </style>
+
+    <script>
+
+
+        $( function () {
+
+            $( "#noSourceWarning" ).position({
+                my: "center",
+                at: "center",
+                of: "#father"
+            });
+
+        } )
+    </script>
+
+
+    <h1>hello</h1>
+
+    <div id="father" >
+
+        <video id="video" width="100%" height="100%" controls style="z-index: 3;position: absolute">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <span id="noSourceWarning" style="color: greenyellow"> 沒有找到影片資源 </span>
+
+        <div id="bk" ></div>
+
+    </div>
+
+
+
+
+</body>
+</html>
