@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>無限可捲式autocomplete</title>
+
+
+    <script  src="https://code.jquery.com/jquery-1.12.4.js"  ></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script  src="//code.jquery.com/ui/1.12.0/jquery-ui.js"  ></script>
+
+    <style>
+        .ui-autocomplete {
+            max-height: 100px;
+            overflow-y: auto;
+            /* prevent horizontal scrollbar */
+            overflow-x: hidden;
+        }
+        /* IE 6 doesn't support max-height
+         * we use height instead, but this forces the menu to always be this tall
+         */
+        * html .ui-autocomplete {
+            height: 100px;
+        }
+    </style>
+
+
+    <script>
+
+        var flag = 0 ;
+        $( function() {
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+            $( "#tags" ).autocomplete({
+                source: function (request, response) {
+                    // request.term is the term searched for.
+                    // response is the callback function you must call to update the autocomplete's  suggestion list.
+                    $.ajax({
+                        url: "https://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                        minLength: 2,
+                        data: { q: request.term , DB:'LJ' , page:'' },
+                        dataType: "json",
+                        success: response,
+                        error: function () {
+                            response([]);
+                        }
+                    });
+                }
+            });
+
+            $( "#tags" ).autocomplete( "instance" )._renderItem = function( ul, item ) {
+
+                ul.scroll(function () {
+
+                    var height = ul.outerHeight();
+                    var scrollHeight = ul[0].scrollHeight;
+                    var scrollTop = ul.scrollTop();
+
+                    if( height + scrollTop >= scrollHeight ){
+
+                        for (var i = 0 ; i < 5 ; i++ ){
+
+                            $.ajax({
+                                url: "https://emarket.riko.com.tw:8444/ProductService/rest/productService/products" ,
+                                data:  { q: $("#searchString").val() , DB:'LJ' , page:''  },
+                                dataType: 'json',
+                                success: function (data) {
+
+                                }
+                            });
+
+                            $( "<li>" ).append( "<div>" + ++flag + "</div>" ).appendTo( ul );
+                        }
+
+
+                    }
+                     // console.log("height="+height+" ; scrollHeight="+scrollHeight+" ; scrollTop="+scrollTop);
+
+                });
+;
+                console.log("item.label="+item.label);
+
+                return $( "<li>" )
+                        .append( "<div>" + item.label + "<br>" + item.desc + "</div>" )
+                        .appendTo( ul );
+
+
+            };
+
+        } );
+    </script>
+
+
+
+</head>
+<body>
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+    </div>
+
+
+</body>
+</html>

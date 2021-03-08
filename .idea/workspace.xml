@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e2aec58-a6e7-4aad-9133-808b24b56d56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/andrew781026.github.io.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/java_src/datatable/BasicView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/java_src/datatable/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/java_src/datatable/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/java_src/mkyong/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/java_src/mkyong/OrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/web/DataTable.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/PrimeDataTable/web/orderTest.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/angularAddingTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/autocompleteTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/dropDownmultiselect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/img/delete_png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/img/edit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/img/ui-anim_basic_16x16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/js/angular-1.5.7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/video/noResource/media/img/Big Buck Bunny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/video/noResource/media/video/Big Buck Bunny.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/video/noResource/videoNoResource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/flex-slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/fullpage.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/css/templatemo-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/flexslider-icon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/flexslider-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/flexslider-icon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/flexslider-icon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/slick.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/slick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/slick.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/fonts/slick.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/item-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/item-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/item-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/main-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/mouse-scroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/profile-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/profile-girl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/images/video-bg.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/fullpage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/jquery.inview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio-ref/js/scrolloverflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/display.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/video-bg.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/java_src/datatable/BasicView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/java_src/datatable/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/java_src/datatable/CarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/java_src/mkyong/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/java_src/mkyong/OrderBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/web/DataTable.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeDataTable/web/orderTest.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularAddingTable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autocompleteTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dropDownmultiselect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/delete_png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/edit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ui-anim_basic_16x16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/angular-1.5.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/noResource/media/img/Big Buck Bunny.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/noResource/media/video/Big Buck Bunny.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/noResource/videoNoResource.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pSOrVu4p8uRX3Pko5m1z8eC9p2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/portfolio" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\andrew781026.github.io\portfolio" />
+      <recent name="D:\test\andrew781026.github.io" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e2aec58-a6e7-4aad-9133-808b24b56d56" name="Default Changelist" comment="" />
+      <created>1615173223845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615173223845</updated>
+      <workItem from="1615173224983" duration="15363000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

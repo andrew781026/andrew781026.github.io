@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王澍 ( Andrew Tree ) 的自我介紹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+    <source src="video-bg.mp4" type="video/mp4">
+</video>
+
+<div id="app">
+
+    <nav class="header">
+        <div class="logo">
+            <img src="tree.png" alt="tree">
+            <span>Andrew Tree</span>
+        </div>
+        <div class="menu-icon hidden-md-and-up" @click="toggleMenu">
+            <i class="fa fa-bars" title="MENU"></i>
+        </div>
+        <div class="text-menu hidden-sm-and-down">
+            <div class="menu-item">首頁</div>
+            <div class="menu-item">關於我</div>
+            <div class="menu-item">服務</div>
+            <div class="menu-item">技能</div>
+            <div class="menu-item">作品集</div>
+            <div class="menu-item">經歷</div>
+            <div class="menu-item">聯絡我</div>
+        </div>
+    </nav>
+
+    <div class="menu" :style="{ height:menuOpen ?'calc( var(--menu-item-height) * 7 )':'0' }">
+        <div class="menu-item">Home</div>
+        <div class="menu-item">About Me</div>
+        <div class="menu-item">Services</div>
+        <div class="menu-item">My Skills</div>
+        <div class="menu-item">My Work</div>
+        <div class="menu-item">Testimonials</div>
+        <div class="menu-item">Contact Me</div>
+    </div>
+
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3.0.5/dist/vue.global.prod.js"></script>
+<script>
+    const {createApp} = Vue;
+
+    const App = {
+        methods: {
+            toggleMenu() {
+                this.menuOpen = !this.menuOpen;
+            },
+        },
+        data() {
+
+            return {
+                menuOpen: false
+            }
+        }
+    }
+
+    createApp(App).mount('#app');
+</script>
+</body>
+</html>
