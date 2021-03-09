@@ -11,45 +11,47 @@
 <body>
 
 <video autoplay muted loop id="bg-video">
-    <source src="video-bg.mp4" type="video/mp4">
+    <source src="./assets/coding.mp4" type="video/mp4">
 </video>
+
+<div class="blue-mask">
+
+</div>
 
 <div id="app">
 
-    <nav class="header">
-        <div class="logo">
-            <img src="tree.png" alt="tree">
-            <span>Andrew Tree</span>
-        </div>
-        <div class="menu-icon hidden-md-and-up" @click="toggleMenu">
-            <i class="fa fa-bars" title="MENU"></i>
-        </div>
-        <div class="text-menu hidden-sm-and-down">
-            <div class="menu-item">首頁</div>
-            <div class="menu-item">關於我</div>
-            <div class="menu-item">服務</div>
-            <div class="menu-item">技能</div>
-            <div class="menu-item">作品集</div>
-            <div class="menu-item">經歷</div>
-            <div class="menu-item">聯絡我</div>
-        </div>
-    </nav>
+    <header id="header">
+        <nav class="navbar">
 
-    <div class="menu" :style="{ height:menuOpen ?'calc( var(--menu-item-height) * 7 )':'0' }">
-        <div class="menu-item">Home</div>
-        <div class="menu-item">About Me</div>
-        <div class="menu-item">Services</div>
-        <div class="menu-item">My Skills</div>
-        <div class="menu-item">My Work</div>
-        <div class="menu-item">Testimonials</div>
-        <div class="menu-item">Contact Me</div>
-    </div>
+            <div class="logo">
+                <img src="tree.png" alt="tree">
+                <span>Andrew Tree</span>
+            </div>
+
+            <div class="menu-icon hidden-md-and-up" @click="toggleMenu">
+                <i class="fa fa-bars" title="MENU"></i>
+            </div>
+
+            <ul class="menu" :class="menuOpen ?'menu-open':'menu-close'">
+                <li class="menu-item">首頁</li>
+                <li class="menu-item">關於我</li>
+                <li class="menu-item">服務</li>
+                <li class="menu-item">技能</li>
+                <li class="menu-item">作品集</li>
+                <li class="menu-item">經歷</li>
+                <li class="menu-item">聯絡我</li>
+            </ul>
+
+        </nav>
+    </header>
 
     <main>
 
     </main>
     <footer>
-
+        <!--
+             參考資料 : Elegance Template - https://templatemo.com/tm-528-elegance
+        -->
     </footer>
 </div>
 
